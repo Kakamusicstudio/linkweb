@@ -33,3 +33,42 @@
     <iframe src="https://web-x18.xpanas.sbs/" title="Embedded Content"></iframe>
 </body>
 </html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta tag ini PENTING banget buat HP, biar layarnya pas dan ga bisa di-zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Ganti judulnya biar lebih umum -->
+    <title>Fullscreen Web Viewer</title>
+    
+    <style>
+        /* Reset dasar biar ga ada margin atau padding aneh */
+        html, body {
+            margin: 0;
+            padding: 0;
+            /* 100vh artinya 100% dari tinggi layar HP. Ini kunci biar full screen! */
+            height: 100vh; 
+            width: 100vw; /* 100% dari lebar layar */
+            overflow: hidden; /* Cegah scrollbar muncul */
+        }
+
+        /* Atur iframe biar menutupi seluruh body */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Hilangkan border hitam default iframe */
+            display: block; /* Fix biar ga ada spasi kecil di bawah iframe */
+        }
+    </style>
+</head>
+<body>
+    <!-- Iframe-nya lu tinggal ganti src-nya kalo mau ganti link -->
+    <iframe src="https://veoaifree.com" title="Embedded Content"></iframe>
+</body>
+</html>
